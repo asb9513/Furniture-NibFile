@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Bold.ttf">
+            <string>Cairo-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="Furniture" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11" translatesAutoresizingMaskIntoConstraints="NO" id="X4S-np-heS">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Favourite " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnS-RT-O94">
+                    <rect key="frame" x="20" y="152" width="236" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="V3z-wO-hpu"/>
+                        <constraint firstAttribute="height" constant="21" id="tWP-08-3Uc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Looks For Your Style" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaH-ZS-OZl">
+                    <rect key="frame" x="20" y="195" width="222.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="BQO-XQ-U2A"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Cairo-Bold" family="Cairo" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGU-kH-qzs">
+                    <rect key="frame" x="23" y="336" width="368" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="bi8-ZQ-HXY"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="ltv-Hc-PeA"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="labelColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Login">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                        <color key="baseBackgroundColor" red="0.91771501300000002" green="0.90851354600000001" blue="0.86247104409999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="Login:" destination="-1" eventType="touchUpInside" id="4F8-q4-tew"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51r-uA-mJB">
+                    <rect key="frame" x="23" y="440" width="368" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="uUU-6n-8cF"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Register" cornerStyle="large">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                        <color key="baseBackgroundColor" red="0.20390275120000001" green="0.20393210649999999" blue="0.2038927972" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="signup:" destination="-1" eventType="touchUpInside" id="aJ5-C3-kn1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EGU-kH-qzs" secondAttribute="trailing" constant="23" id="0wu-Pv-kN1"/>
+                <constraint firstItem="X4S-np-heS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="27Q-iR-8PH"/>
+                <constraint firstItem="51r-uA-mJB" firstAttribute="trailing" secondItem="EGU-kH-qzs" secondAttribute="trailing" id="3rn-1f-jEP"/>
+                <constraint firstItem="X4S-np-heS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="C67-5h-MEy"/>
+                <constraint firstItem="EGU-kH-qzs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="23" id="EMM-d9-L2R"/>
+                <constraint firstItem="EGU-kH-qzs" firstAttribute="top" secondItem="ZaH-ZS-OZl" secondAttribute="bottom" constant="120" id="MZF-y1-BSY"/>
+                <constraint firstItem="X4S-np-heS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Rl2-iG-ceF"/>
+                <constraint firstItem="51r-uA-mJB" firstAttribute="height" secondItem="EGU-kH-qzs" secondAttribute="height" id="SAY-G7-3LJ"/>
+                <constraint firstItem="mnS-RT-O94" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="108" id="Yas-EC-hs0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mnS-RT-O94" secondAttribute="trailing" constant="158" id="Zez-qr-e5l"/>
+                <constraint firstItem="mnS-RT-O94" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="au3-MF-VEq"/>
+                <constraint firstItem="ZaH-ZS-OZl" firstAttribute="top" secondItem="mnS-RT-O94" secondAttribute="bottom" constant="22" id="h33-6d-b13"/>
+                <constraint firstItem="51r-uA-mJB" firstAttribute="width" secondItem="EGU-kH-qzs" secondAttribute="width" id="k4y-K8-1oP"/>
+                <constraint firstItem="51r-uA-mJB" firstAttribute="leading" secondItem="EGU-kH-qzs" secondAttribute="leading" id="l2L-qB-SaY"/>
+                <constraint firstItem="51r-uA-mJB" firstAttribute="top" secondItem="EGU-kH-qzs" secondAttribute="bottom" constant="49" id="mTZ-zI-vXQ"/>
+                <constraint firstItem="ZaH-ZS-OZl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="nkL-MP-NVw"/>
+                <constraint firstAttribute="bottom" secondItem="X4S-np-heS" secondAttribute="bottom" id="sd0-Qd-fjx"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="79.6875"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="51r-uA-mJB">
+            <size key="intrinsicContentSize" width="96.5" height="38"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="11" width="454" height="682"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

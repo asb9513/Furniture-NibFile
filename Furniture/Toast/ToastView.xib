@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToastView" customModule="Furniture" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="i5M-Pr-FkT" id="oHZ-BP-odW"/>
+                <outlet property="errorLabel" destination="6V3-Ph-67m" id="UBy-NK-BzT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="468" height="76"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your password does not meet the requirements" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6V3-Ph-67m">
+                    <rect key="frame" x="3" y="14" width="462" height="48"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="0.27583062650000001" blue="0.1821697652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6V3-Ph-67m" secondAttribute="bottom" constant="14" id="2b4-VP-tVc"/>
+                <constraint firstAttribute="trailing" secondItem="6V3-Ph-67m" secondAttribute="trailing" constant="3" id="NUF-yS-FEd"/>
+                <constraint firstItem="6V3-Ph-67m" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="14" id="dHM-s3-TZJ"/>
+                <constraint firstItem="6V3-Ph-67m" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="3" id="gX1-d2-MCa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-394.20289855072468" y="-182.8125"/>
+        </view>
+    </objects>
+</document>
